@@ -10,7 +10,7 @@ terraform {
     bucket = "81s-remote-state-rama"
     key    = "expense-bastion"
     region = "us-east-1"
-    dynamodb_table = "81s-locking-dev"
+    dynamodb_table = "81s-locking-dev-rama"
   }
 }
 
