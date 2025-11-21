@@ -63,12 +63,12 @@ module "db" {
 module "records" {
   source  = "terraform-aws-modules/route53/aws//modules/record"
 
-  zone_name = var.zone_name
+  zone_id = var.zone_id
 
   records = [
     
     {
-      name    = "mysql-${var.environment}" #mysql-dev.daws81s.online
+      name    = "mysql-${var.environment}" #mysql-dev.ramana3490.online
       type    = "CNAME"
       ttl     = 1
       records = [
